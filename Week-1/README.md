@@ -53,7 +53,7 @@ Whenever we click on a link or enter a URL, the browser sends and receives infor
 
 It involves a multi-step process including **DNS resolution**, **HTTP exchange** between browser and web server, **rendering**, and so on, as follows:
 
-![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Hand-drawing-explaining-browser.png)
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Hand-drawing-explaing-browser.png)
 Credits: HackerNoon
 
 * You enter a URL in the web browser.
