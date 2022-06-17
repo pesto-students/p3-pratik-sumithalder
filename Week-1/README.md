@@ -45,3 +45,22 @@ The JavaScript Interpreter, as the name suggests, interprets and executes the Ja
 It is a uniform layer that the browser uses to store all its data including Cookies, Local Storage, Session Storage, IndexedDB, WebSQL, and FileSystem.
 
 ![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Browser-components.png)
+
+
+# Step-by-Step Working of Browser
+
+Whenever we click on a link or enter a URL, the browser sends and receives information or data to and from other parts of the web. The information it receives is rendered by the rendering engine and translated into an easily understandable format. It is then displayed in the user interface.
+
+It involves a multi-step process including **DNS resolution**, **HTTP exchange** between browser and web server, **rendering**, and so on, as follows:
+
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Hand-drawing-explaining-browser.png)
+Credits: HackerNoon
+
+* You enter a URL in the web browser.
+* The browser finds the IP address for the domain using DNS.
+* The browser initiates a connection with the server.
+* Next, it sends an HTTP request to the webserver.
+* The server handles the request and sends out an HTTP response.
+* The browser renders and displays the HTML content, i.e., the web page.
+
+> ***An important thing to note here is that in web browsers such as Google Chrome each tab runs in a separate process(multiple instances of rendering engine).***
