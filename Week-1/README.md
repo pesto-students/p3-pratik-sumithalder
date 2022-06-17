@@ -44,4 +44,4 @@ The JavaScript Interpreter, as the name suggests, interprets and executes the Ja
 
 It is a uniform layer that the browser uses to store all its data including Cookies, Local Storage, Session Storage, IndexedDB, WebSQL, and FileSystem.
 
-![This is an image](/assets/Browser-components.png)
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Browser-components.png)
