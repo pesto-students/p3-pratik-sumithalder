@@ -43,3 +43,5 @@ The JavaScript Interpreter, as the name suggests, interprets and executes the Ja
 ### 7. Data Storage
 
 It is a uniform layer that the browser uses to store all its data including Cookies, Local Storage, Session Storage, IndexedDB, WebSQL, and FileSystem.
+
+![This is an image](/assets/Browser-components.png)
