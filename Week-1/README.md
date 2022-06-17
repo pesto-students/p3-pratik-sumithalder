@@ -10,4 +10,4 @@ Before we start with how a web browser works, let’s have a brief look at the c
 
 Any web browser has two elements- front-end and back-end. The front-end is the interface we interact with, which looks fairly simple. However, it’s the complex back-end that facilitates the core functioning of a browser. A browser has the following main components:
 
-![This is an image](p3-pratik-sumithalder\Week-1\assets\Browser-Working.png)
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Browser-Working.png)
