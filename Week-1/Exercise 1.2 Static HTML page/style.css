@@ -5,7 +5,7 @@ body {
   }
 header {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   background: #413F42;
   padding: 20px;
 }
@@ -46,7 +46,7 @@ header {
 footer{
   background: #035397;
   color: #ffffff;
-  padding: 5px;
+  padding: 10px;
 }
 .footer-logo {
   width: 125px;
@@ -61,9 +61,11 @@ footer > ul {
   padding: 0;
   list-style: none;
 }
+
 footer > ul > li {
     margin: 0 10px;
 }
+
 .push-right {
   margin-left: auto;
   display: flex;
