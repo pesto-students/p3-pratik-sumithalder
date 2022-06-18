@@ -64,3 +64,53 @@ Credits: HackerNoon
 * The browser renders and displays the HTML content, i.e., the web page.
 
 > ***An important thing to note here is that in web browsers such as Google Chrome each tab runs in a separate process(multiple instances of rendering engine).***
+
+
+# Let’s Focus on the Rendering Engine
+
+The rendering engine has a very important job as it displays what you see on your screen. It communicates with the networking layer of the browser to grab HTML code and other items passed from a remote server. By default the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extensions, for example displaying PDF documents.
+
+Different browsers use different rendering engines: Internet Explorer uses Trident, Firefox uses Gecko, Safari uses WebKit, Opera and Chrome uses Blink, which is a fork of WebKit.
+
+## Main flow of Rendering
+
+The main flow is always the same - the rendering engine start getting content of the requested document from the networking layer. After that this is the basic flow of the rendering engine:
+
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Flow-of-rendering.png)
+
+## 1. Parsing HTML and creating the DOM Tree
+
+HTML is a hierarchal structure that begins with a <html> tag, usually contains a <head> and <body> tag, and elements can be nested within elements. These HTML elements are parsed and turned into a “DOM tree” by the rendering engine. It is a tree like structure made out of the HTML, where each tag is a branch starting at the root element.
+
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/Dom-tree.png)
+
+## 2. Render Tree Construction
+
+CSS attributes (style attributes) are also parsed and combined with the DOM tree to create a **“render tree”**. This is a tree of visual elements such as height/width and color ordered in the hierarchy in which they are to be displayed in the browser.
+
+![This is an image](https://github.com/pesto-students/p3-pratik-sumithalder/blob/week1/Week-1/assets/CSSDOM.png)
+
+## 3. Layout Process
+
+After the construction of the render tree, it goes through a **“layout process”** of the render tree. When the renderer is created and added to the tree, it does not have a position and size. The process of calculating these values is called layout or reflow. This means giving each node the exact coordinates where it should appear on the screen. The position of the root renderer is 0,0 and its dimensions are the viewport–the visible part of the browser window. All renderers have a “layout” or “reflow” method, each renderer invokes the layout method of its children that need layout.
+
+## 4. Painting
+
+The next stage is **painting**. In the painting stage, the render tree is traversed and the renderer’s “paint()” method is called to display content on the screen. Painting uses the UI backend layer.
+
+
+The rendering engine always tries to display the contents on the screen as soon as possible for better user experience. It does not wait for the HTML parsing to complete before starting to build and layout the render tree. It parses and displays the content it has received from the network, while rest of the contents stills keeps coming from the network.
+
+# Script Processors & Order of Script Processing
+
+When the parser finds non-blocking resources, such as an image, the browser will request those resources and continue parsing. Parsing can continue when a CSS file is encountered, but 'script' tags—particularly those without an async or defer attribute... block rendering, and pause the parsing of HTML. Though the browser's preload scanner hastens this process, excessive scripts can still be a significant bottleneck.
+
+Javascript execution will be halted until CSSOM is ready. All scripts are parsed & processed sequentially by default. Parsing of a (HTML/CSS)document halts until the encountered script has been executed. Parsing also halts until an external script is fetched.
+
+If 'defer' attribute is used on a script, then the parser will not halt (document parsing) until this deferred script is loaded completely. This deferred script is parsed after parsing the document. If a script is has "async" attribute, it will be parsed and executed by a different thread.
+
+References:
+1. [How browsers work](https://web.dev/howbrowserswork/#The_main_flow)
+2. [Journey of a web page 🛣️ - How browsers work](https://dev.to/gitpaulo/journey-of-a-web-page-how-browsers-work-10co)
+3. [How Do Web Browsers Work?](https://hackernoon.com/how-do-web-browsers-work-40cefd2cb1e1)
+
