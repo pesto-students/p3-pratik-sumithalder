@@ -124,15 +124,15 @@
         <span class="focus-border"></span>
       </div>
       <div class="form-label">
-        <label for="countries">Country</label>
-        <select name="countries" id="countries">
+        <label for="country">Country</label>
+        <select name="country" id="country">
           <option value="india">India</option>
-          <option value="america">Canada</option>
-          <option value="russia">Japan</option>
-          <option value="china">USA</option>
+          <option value="canada">Canada</option>
+          <option value="japan">Japan</option>
+          <option value="usa">USA</option>
         </select>
       </div>
-      <button type="submit">Sign Up Now</button>
+      <button onclick="onSubmit()" type="submit">Sign Up Now</button>
     </form>
   </div>
   <footer>
@@ -148,3 +148,14 @@
   </footer>
 </body>
 </html>
+
+<script  type="text/javascript">
+function onSubmit() {
+  localStorage.setItem("name", document.getElementById("name").value);
+  localStorage.setItem("email", document.getElementById("email").value);
+  localStorage.setItem("number", document.getElementById("number").value);
+  localStorage.setItem("password", document.getElementById("password").value);
+  localStorage.setItem("confirm-password", document.getElementById("confirm-password").value);
+  localStorage.setItem("country", document.getElementById("country").value);
+}
+</script>
