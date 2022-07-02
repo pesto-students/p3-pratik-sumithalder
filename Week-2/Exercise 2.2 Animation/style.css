@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.wrapper span {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    z-index: -1;
+    font-size: 25px;
+}
+span .intro {
+    text-align: center;
+}
+
+span .emoji {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+  
+.box {
+    height: 200px;
+    width: 200px;
+    transition: all 0.5s linear;
+}
+  
+.red {
+    background-color: #DC1C13;
+    transform-origin: 0px 0px;
+}
+  
+.yellow {
+    background-color: #FFE452;
+    transform-origin: 200px 0px;
+}
+  
+.green {
+    background-color: #68BB59;
+    transform-origin: 200px 200px;
+}
+  
+.blue {
+    background-color: #1260CC;
+    transform-origin: 0px 200px;
+}
+  
+.wrapper:hover .box {
+    transform: rotate(90deg) ;
+}
+  
+.wrapper:hover .box.yellow,.wrapper:hover .box.blue {
+    transform: rotate(-90deg) ;
+}

@@ -1,0 +1,297 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  height: 500px;
+  width: 100%;
+  background-color: #010101;
+  margin: 0;
+}
+
+.Hero {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height:500px; 
+  margin: 0 auto;
+  width: 1000px;
+  color:white;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 18px;
+}
+
+.OnderTXT {
+  margin:0px;
+  font-family: 'Crimson Text', serif;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 6px;
+  color:#989898;
+}
+
+.line {
+  margin-bottom:20px;
+  height: 40px;
+  width: 40px;
+  border-bottom: 2px solid #d78e38;
+}
+
+.date {
+  margin:0;
+  font-family: 'Crimson Text', serif;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 4px;
+  color:white;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 80%;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+
+.column-1,
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+article > p {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 180%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+article > h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #955710;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.img-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #010101;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+footer .footer__link{
+  transition: all .5s;
+}
+footer .footer__link:hover{
+  color: #d78e38;
+
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li{
+  list-style: none;
+}
+
+.footer__link{
+  color: #fff;
+  margin: 0px 20px;
+  text-decoration: none;
+}
+
+.footer__copyright .footer__link{
+  color: #ff8b1e;
+  margin: 0px;
+}
+
+form {
+  padding: 40px;
+  border-radius: 10px;
+  width: 50%;
+  border: 1px solid #d78e38;
+}
+form > button {
+  width: 95%;
+  margin-left: 3%;
+  padding: 20px;
+  margin-top: 30px;
+  border: none;
+  background-color: #d78e38;
+  color: #fff;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+form > button:hover{
+  background-color: #955710;
+
+}
+
+form > button:active{
+  transform: translateY(0.1rem);
+
+}
+
+.form-wrapper {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+}
+
+.form-wrapper > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #955710;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+:focus {
+  outline: none;
+}
+::selection {
+  color: #d78e38;
+  background: rgb(255, 255, 230);
+}
+
+.form-label {
+  float: left;
+  width: 100%;
+  margin: 20px 3%;
+  position: relative;
+  grid-area: col;
+}
+
+.form-label > label {
+  color: #955710;
+}
+
+input::-webkit-input-placeholder{
+  color:#7d7d7d;
+}
+
+input[type="text"],input[type="password"],select {
+  color: #77491e;
+  width: 95%;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+select{
+  margin-top: 30px;
+}
+
+
+.input {
+  margin-top: 10px;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.input ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #d78e38;
+  transition: 0.4s;
+}
+
+.input:focus ~ .focus-border {
+  width: 95%;
+  transition: 0.4s;
+  left: 0;
+}
+
+@media only screen and (max-width: 980px) {
+
+  header {
+    height: 300px;
+    width: 100%;
+    background-color: #010101;
+    padding: 40px;
+  }
+  
+  .Hero {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  main header h1{
+    font-size: 40px;
+  }
+  main .content-wrapper{
+    flex-direction: column;
+    width: 100%;
+  }
+  .column-1,.column-2{
+    width: 100%;
+  }
+  form{
+    width: 100%;
+  }
+  footer{
+    flex-direction: column;
+  }
+
+}
