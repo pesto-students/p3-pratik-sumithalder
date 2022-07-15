@@ -5,7 +5,7 @@ const customPromiseState = {
     REJECTED: 'REJECTED'
 
 }
-class customPromise {
+class CustomPromise {
 
     constructor(fn){
 
@@ -57,7 +57,7 @@ class customPromise {
 
 const getNumber = () =>{
 
-    return new customPromise((res,rej) => {
+    return new CustomPromise((res,rej) => {
 
         const randomNum = parseInt(Math.random() * 100 , 10);
 
