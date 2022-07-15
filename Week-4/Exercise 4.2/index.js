@@ -1,15 +1,15 @@
-var Person = function () {};
+var person = function () {};
 
-Person.prototype.initilize = function (name, age) {
+person.prototype.initialize = function (name, age) {
 
 	this.name = name;
 	this.age = age;
 
 };
 
-var Teacher = function () {
+var teacher = function () {
 
-	Person.call(this);
+	// person.call(this);
 
 	this.teach = function (subject) {
 
@@ -18,8 +18,8 @@ var Teacher = function () {
 	};
 };
 
-Object.setPrototypeOf(Teacher.prototype, Person.prototype);
+Object.setPrototypeOf(teacher.prototype, person.prototype);
 
-var him = new Teacher();
+var him = new teacher();
 him.initialize("Adam",45);
 him.teach("Inheritance");
