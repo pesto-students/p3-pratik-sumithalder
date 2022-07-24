@@ -9,7 +9,7 @@ person.prototype.initialize = function (name, age) {
 
 var teacher = function () {
 
-	// Person.call(this);
+	// person.call(this);
 
 	this.teach = function (subject) {
 
