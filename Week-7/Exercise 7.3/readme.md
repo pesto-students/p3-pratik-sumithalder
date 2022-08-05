@@ -10,7 +10,7 @@ N = 3\
 value[] = {1,3,4}\
 x = 2\
 Output: True\
-Explanation: In above test case N = 3.The linked list with nodes N = 3 is given. Then value of x=2 is givenwhich means last node is connected with xth node of linked list. Therefore, there exists a loop.\
+Explanation: In above test case N = 3.The linked list with nodes N = 3 is given. Then value of x=2 is givenwhich means last node is connected with xth node of linked list. Therefore, there exists a loop.
 
 Example 2:\
 Input:\
@@ -18,7 +18,7 @@ N = 4\
 value[] = {1,8,3,4}\
 x = 0\
 Output: False\
-Explanation: For N = 4 ,x = 0 means then lastNode->next = NULL, then the Linked list does not containsany loop.\
+Explanation: For N = 4 ,x = 0 means then lastNode->next = NULL, then the Linked list does not containsany loop.
 
 Expected Time Complexity: O(N) Expected Auxiliary Space: O(1)\
 

@@ -16,7 +16,7 @@ In the first testcase\
 1 3 the queue will be {2 3}\
 2   poped element will be 2 the queue will be {3}\
 1 4 the queue will be {3 4}\
-2   poped element will be 3.\
+2   poped element will be 3.
 
 Example 2:\
 Input:\
@@ -28,10 +28,10 @@ Explanation:\
 In the second testcase\
 1 2 the queue will be {2}\
 2   poped element will be 2 and then the queue will be empty 2 the queue is empty and hence -1\
-1 4 the queue will be {4}.\
+1 4 the queue will be {4}.
 
-Expected Time Complexity : O(1) for push() and O(N) for pop() or O(N) for push() andO(1) for pop()\
+Expected Time Complexity : O(1) for push() and O(N) for pop() or O(N) for push() andO(1) for pop()
 
-Expected Auxilliary Space : O(1).\
+Expected Auxilliary Space : O(1).
 
 Constraints: 1 <= Q <= 100 1 <= x <= 100
